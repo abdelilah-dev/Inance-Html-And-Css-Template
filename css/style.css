@@ -142,7 +142,7 @@ html {
 .header-bottom .header-content .icon {
     display: none;
     font-size: 30px;
-} 
+}
 
 .header-bottom .header-content .links {
     display: flex;
@@ -178,15 +178,18 @@ html {
     .header-bottom .header-content {
         position: relative;
     }
+
     .header-bottom .header-content .icon {
         display: flex;
         justify-content: flex-end;
-        
+
     }
+
     .header-bottom .header-content .links:hover ul {
         display: grid;
 
-    } 
+    }
+
     .header-bottom .header-content .links {
         display: flex;
         flex-direction: column;
@@ -199,15 +202,25 @@ html {
         grid-template-columns: 1fr;
         background-color: #0a0f43a8;
         right: 0px;
-        top: 40px;
+        top: 42px;
         padding: 0;
         gap: 5px;
         width: 100%;
     }
-    
+
+    .header-bottom .header-content .links ul::after {
+        content: '';
+        position: absolute;
+        top: -26.5px;
+        right: 0;
+        border: 14px solid;
+        border-color: transparent transparent #0a0f43a8 transparent;
+    }
+
     .header-bottom .header-content .links ul li {
         width: 100%;
     }
+
     .header-bottom .header-content .links ul li a {
         display: block;
         padding: 20px 0;
@@ -216,10 +229,11 @@ html {
         color: white !important;
         text-align: center;
     }
+
     .header-bottom .header-content .links ul li a:hover {
         padding-left: 35px;
         color: var(--but_color) !important;
-        
+
     }
 }
 
@@ -694,6 +708,7 @@ html {
     .client-section .client-info .img-name .lbox {
         flex-direction: column;
     }
+
     .client-section .client-info .img-name .lbox .star-name {
         margin-left: -45px;
     }
