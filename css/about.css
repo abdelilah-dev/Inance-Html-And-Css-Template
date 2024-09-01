@@ -1,0 +1,18 @@
+/* Start Variable */
+:root {
+    --mainfontcolor: #040000;
+    --secondfontcolor: #0355cc;
+    --mainbackgroundcolor: #d1e3ff;
+    --but_color: #ff8a1d;
+    --secondbackgroundcolor: #0a0f43;
+
+}
+
+/* End Variable */
+.header-bottom .header-content .links ul li:first-child a {
+    color: black;
+}
+
+.header-bottom .header-content .links ul li:nth-child(2) a {
+    color: var(--secondfontcolor);
+}
